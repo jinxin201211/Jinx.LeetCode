@@ -1,4 +1,5 @@
-﻿using Jinx.LeetCode.面试题;
+﻿using Jinx.LeetCode.ProblemSet;
+using Jinx.LeetCode.面试题;
 using System;
 
 namespace Jinx.LeetCode
@@ -7,8 +8,7 @@ namespace Jinx.LeetCode
     {
         static void Main(string[] args)
         {
-            ISolution test = new 面试题62_圆圈中最后剩下的数字();
-
+            ISolution test = new ProblemSet_021_合并两个有序链表();
             test.Test();
         }
     }

@@ -10,5 +10,16 @@ namespace Jinx.LeetCode
         {
             Console.WriteLine(string.Join(",", source));
         }
+        public static void Print(this ListNode source)
+        {
+            ListNode root = source;
+            while (root != null)
+            {
+                Console.Write(root.val);
+                Console.Write(" ");
+                root = root.next;
+            }
+            Console.WriteLine();
+        }
     }
 }
