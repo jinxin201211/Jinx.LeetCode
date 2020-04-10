@@ -19,8 +19,6 @@ namespace Jinx.LeetCode.ProblemSet
         /// 执行用时 :↵96 ms↵, 在所有 C# 提交中击败了↵100.00%↵的用户
         /// 内存消耗 :↵25.7 MB↵, 在所有 C# 提交中击败了↵5.26%↵的用户
         /// </summary>
-        /// <param name="l1"></param>
-        /// <param name="l2"></param>
         /// <returns></returns>
         public ListNode MergeTwoLists(ListNode l1, ListNode l2)
         {

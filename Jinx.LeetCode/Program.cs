@@ -8,7 +8,7 @@ namespace Jinx.LeetCode
     {
         static void Main(string[] args)
         {
-            ISolution test = new ProblemSet_021_合并两个有序链表();
+            ISolution test = new ProblemSet_142_环形链表_II();
             test.Test();
         }
     }
