@@ -6,6 +6,8 @@ namespace Jinx.LeetCode.ProblemSet
 {
     public class ProblemSet_142_环形链表_II : ISolution
     {
+        public CompleteStatus Status { get { return CompleteStatus.Failed; } }
+
         public void Test()
         {
             //ListNode n1 = new ListNode(3);
@@ -20,6 +22,7 @@ namespace Jinx.LeetCode.ProblemSet
             ListNode n1 = new ListNode(3);
             DetectCycle(n1).Print();
         }
+
         public ListNode DetectCycle(ListNode head)
         {
             List<ListNode> lln = new List<ListNode>();

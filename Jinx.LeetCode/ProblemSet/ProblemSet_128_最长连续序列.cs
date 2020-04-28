@@ -6,12 +6,15 @@ namespace Jinx.LeetCode.ProblemSet
 {
     public class ProblemSet_128_最长连续序列 : ISolution
     {
+        public CompleteStatus Status { get { return CompleteStatus.Failed; } }
+
         public void Test()
         {
             Console.WriteLine(LongestConsecutive(new int[] { 100, 4, 200, 1, 3, 2 }));
             //Console.WriteLine(LongestConsecutive(new int[] { 0, -1 }));
             Console.WriteLine(LongestConsecutive(new int[] { 2147483646, -2147483647, 0, 2, 2147483644, -2147483645, 2147483645 }));
         }
+
         public int LongestConsecutive(int[] nums)
         {
             int max = int.MinValue;

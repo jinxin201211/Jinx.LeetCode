@@ -6,6 +6,8 @@ namespace Jinx.LeetCode.ProblemSet
 {
     public class ProblemSet_017_电话号码的字母组合 : ISolution
     {
+        public CompleteStatus Status { get { return CompleteStatus.MemoryUnqualified; } }
+
         public void Test()
         {
             IList<string> result = LetterCombinations2("23");
@@ -22,7 +24,6 @@ namespace Jinx.LeetCode.ProblemSet
         /// "执行用时 :↵272 ms↵, 在所有 C# 提交中击败了↵92.02%↵的用户"
         /// "内存消耗 :↵31.6 MB↵, 在所有 C# 提交中击败了↵20.00%↵的用户"
         /// </summary>
-        /// <returns></returns>
         public IList<string> LetterCombinations(string digits)
         {
             if (string.IsNullOrEmpty(digits))
@@ -76,8 +77,6 @@ namespace Jinx.LeetCode.ProblemSet
         /// "执行用时 :↵272 ms↵, 在所有 C# 提交中击败了↵92.02%↵的用户"
         /// "内存消耗 :↵31.6 MB↵, 在所有 C# 提交中击败了↵20.00%↵的用户"
         /// </summary>
-        /// <param name="digits"></param>
-        /// <returns></returns>
         public IList<string> LetterCombinations2(string digits)
         {
             if (string.IsNullOrEmpty(digits))

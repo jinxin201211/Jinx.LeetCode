@@ -7,5 +7,7 @@ namespace Jinx.LeetCode
     public interface ISolution
     {
         void Test();
+
+        CompleteStatus Status { get; }
     }
 }

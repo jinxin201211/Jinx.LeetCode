@@ -6,10 +6,16 @@ namespace Jinx.LeetCode
 {
     public static class IEnumerableExtension
     {
+        public static string ToString<T>(this IEnumerable<T> source)
+        {
+            return string.Join(",", source);
+        }
+
         public static void Print<T>(this IEnumerable<T> source)
         {
             Console.WriteLine(string.Join(",", source));
         }
+
         public static void Print(this ListNode source)
         {
             ListNode root = source;

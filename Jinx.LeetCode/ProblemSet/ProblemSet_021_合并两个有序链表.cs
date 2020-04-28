@@ -6,6 +6,8 @@ namespace Jinx.LeetCode.ProblemSet
 {
     public class ProblemSet_021_合并两个有序链表 : ISolution
     {
+        public CompleteStatus Status { get { return CompleteStatus.MemoryUnqualified; } }
+
         public void Test()
         {
             ListNode l1 = new ListNode(1) { next = new ListNode(2) { next = new ListNode(5) } };
@@ -19,7 +21,6 @@ namespace Jinx.LeetCode.ProblemSet
         /// 执行用时 :↵96 ms↵, 在所有 C# 提交中击败了↵100.00%↵的用户
         /// 内存消耗 :↵25.7 MB↵, 在所有 C# 提交中击败了↵5.26%↵的用户
         /// </summary>
-        /// <returns></returns>
         public ListNode MergeTwoLists(ListNode l1, ListNode l2)
         {
             ListNode head = new ListNode(0);

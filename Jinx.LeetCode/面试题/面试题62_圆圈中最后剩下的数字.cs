@@ -8,6 +8,8 @@ namespace Jinx.LeetCode.面试题
 {
     public class 面试题62_圆圈中最后剩下的数字 : ISolution
     {
+        public CompleteStatus Status { get { return CompleteStatus.Excellent; } }
+
         public void Test()
         {
             Console.WriteLine(LastRemaining2(5, 3));

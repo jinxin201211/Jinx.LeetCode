@@ -6,6 +6,8 @@ namespace Jinx.LeetCode.ProblemSet
 {
     public class ProblemSet_151_翻转字符串里的单词 : ISolution
     {
+        public CompleteStatus Status { get { return CompleteStatus.Unqualified; } }
+
         public void Test()
         {
             Console.WriteLine($"----------------{ReverseWords("  hello world!  ")}-------------------");
@@ -14,7 +16,6 @@ namespace Jinx.LeetCode.ProblemSet
         /// "执行用时 :↵120 ms↵, 在所有 C# 提交中击败了↵34.52%↵的用户"
         /// "内存消耗 :↵42.3 MB↵, 在所有 C# 提交中击败了↵50.00%↵的用户"
         /// </summary>
-        /// <returns></returns>
         public string ReverseWords(string s)
         {
             char[] str = s.Trim().ToCharArray();
@@ -53,7 +54,6 @@ namespace Jinx.LeetCode.ProblemSet
         /// "执行用时 :↵932 ms↵, 在所有 C# 提交中击败了↵5.95%↵的用户"
         /// "内存消耗 :↵46.5 MB↵, 在所有 C# 提交中击败了↵50.00%↵的用户"
         /// </summary>
-        /// <returns></returns>
         public string ReverseWords3(string s)
         {
             char[] str = s.Trim().ToCharArray();
@@ -96,7 +96,6 @@ namespace Jinx.LeetCode.ProblemSet
         /// "执行用时 :↵160 ms↵, 在所有 C# 提交中击败了↵5.95%↵的用户"
         /// "内存消耗 :↵43.9 MB↵, 在所有 C# 提交中击败了↵50.00%↵的用户"
         /// </summary>
-        /// <returns></returns>
         public string ReverseWords2(string s)
         {
             List<string> words = new List<string>();

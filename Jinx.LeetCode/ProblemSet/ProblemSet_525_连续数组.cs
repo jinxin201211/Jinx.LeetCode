@@ -6,10 +6,13 @@ namespace Jinx.LeetCode.ProblemSet
 {
     class ProblemSet_525_连续数组 : ISolution
     {
+        public CompleteStatus Status { get { return CompleteStatus.Failed; } }
+
         public void Test()
         {
             Console.WriteLine(FindMaxLength(new int[] { 0, 0, 1, 0, 0, 0, 1, 1 }));
         }
+
         public int FindMaxLength(int[] nums)
         {
             int MAX = 0;
